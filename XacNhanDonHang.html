@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+  <link rel="stylesheet" href="./assets/css/grid.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+  <link href="/assets/font/fonta
+  wesome-free-5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3/css/all.min.css">
+  <link rel="icon" href="./assets/font/themify-icons/SVG/shopping-cart-full.svg" type="image/gif" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <title>Logan Clothing Store</title>
+</head>
+
+<body>
+
+  <div class="main">
+
+    <div class="grid wide">
+      <div class="row">
+        <div class="col wide l-8">
+          <div class="row">
+            <div class="col wide l-12"><a href="#" class="order__logo-link">
+                <img src="./assets/img/logo.png" alt="logo" class="order__logo-img"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col wide l-6">
+              <h1 class="oreder__form-heading">Thông Tin Nhận Hàng</h1>
+              <form action="#" class="order__form-control">
+                <div class="row">
+                  <div class="col wide l-12">
+                    <input type="text" class="order__form-input" placeholder="Họ và Tên" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col wide l-12">
+                    <input type="text" class="order__form-input" placeholder="Số Điện Thoại" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col wide l-12">
+                    <input type="text" class="order__form-input" placeholder="Địa Chỉ" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col wide l-12">
+                    <input type="date" class="order__form-input" required placeholder="Ngày Giao "   onchange="this.className=(this.value!=''?'has-value':'') ">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col wide l-12">
+                    <textarea name="GhiChu" class="order__form-input" cols="30" rows="10"
+                      placeholder="Ghi chú (tùy chọn)"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col wide l-6">
+              <h1 class="oreder__form-heading">Vận Chuyển</h1>
+              <div class="row">
+                <div class="col wide l-12">
+                  <p class="order__ship-heading">Vui lòng nhập thông tin giao hàng</p>
+                </div>
+              </div>
+              <h1 class="oreder__form-heading">Thanh toán</h1>
+              <div class="row">
+                <div class="col wide l-12">
+                  <div class="order__ship-wrap">
+
+                    <div class="order__ship-content">
+                      <p class="oreder__ship-tilte">Thanh toán khi giao hàng (COD)</p>
+                      <i class="oreder__ship-icon far fa-money-bill-alt"></i>
+                    </div>
+                    <div class="order__ship-text-remember">
+                      <p class="order__ship-text-rem-tilte">Bạn chỉ phải thanh toán khi nhận được hàng</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col wide l-4">
+          <div class="confirm__wrap">
+            <div class="row">
+              <div class="col wide l-12">
+                <h1 class="confirm__heading">Đơn Hàng (<span class="confirm__heading-number">1</span> sản phẩm)</h1>
+              </div>
+            </div>
+            <hr class="hr">
+            <div class="row">
+              <div class="col wide l-12">
+                <div class="row">
+                  <div class="confirm__item-wrap">
+
+                    <div class="col wide l-3">
+                      <img src="./assets/img/sp/sp1.jpg" alt="sp" class="confirm__item-img">
+                      <span class="confirm__item-content-quantity">1</span>
+                    </div>
+                    <div class="col wide l-3">
+                      <div class="confirm__item-content">
+                        <p class="confirm__item-content-tiltle">Áo sơ mi họa tiết versace - SM2190</p>
+
+                      </div>
+                    </div>
+                    <div class="col wide l-3">
+                      <p class="confirm__item-price">200.000d</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="hr">
+
+            <div class="row">
+              <div class="col wide l-12">
+                <div class="confirm__total-wrap">
+                  <p class="confirm__total-heading">Tạm tính</p>
+                  <p class="confirm__total-price">200.000d</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col wide l-12">
+                <div class="confirm__total-wrap">
+                  <p class="confirm__total-heading">Phí vận chuyển</p>
+                  <p class="confirm__total-price"></p>
+                </div>
+              </div>
+            </div>
+            <hr class="hr">
+            <div class="row">
+              <div class="col wide l-12">
+                <div class="confirm__total-wrap">
+                  <p class="confirm__total-heading--final">Tổng cộng</p>
+                  <p class="confirm__total-price-final">200.000d</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col wide l-12">
+                <div class="confirm__total-wrap">
+                  <a href="#" class="confirm__total-link">
+                    <p class="btn confirm__total-price-final">Quay về giỏ hàng</p>
+                  </a>
+
+                  <a href="#" class="confirm__total-link">
+                  
+                    <input type="submit" value="Đặt Hàng" class="btn confirm__total-price-final confirm__total-price-final--confirm">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
